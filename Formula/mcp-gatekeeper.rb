@@ -1,16 +1,16 @@
 class McpGatekeeper < Formula
   desc "Lightweight stdio proxy for filtering MCP server tool lists"
   homepage "https://github.com/chy168/mcp-gatekeeper"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.6/mcp-gatekeeper-darwin-arm64"
-      sha256 "59b09954e3a94b5a9facd400561e1ee497f1622f3639014b1407ba88ee66a28c"
+      url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.7/mcp-gatekeeper-darwin-arm64"
+      sha256 "a6fa5cbe0373c489492076766ee223cd7e3341b82a2557bba68427802fe7db85"
 
       resource "mcp-gatekeeper-secret" do
-        url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.6/mcp-gatekeeper-secret-darwin-arm64"
-        sha256 "973b21f750c5fd391f0ac2f1489e377c7b60fce8ac4cf0194b634cf87e30b48f"
+        url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.7/mcp-gatekeeper-secret-darwin-arm64"
+        sha256 "feca43c58f2ea4728f22ca40a14dcb9880f7c972d1bd6ab5769ac70016ec3a52"
       end
 
       def install
@@ -18,12 +18,12 @@ class McpGatekeeper < Formula
         resource("mcp-gatekeeper-secret").stage { bin.install "mcp-gatekeeper-secret-darwin-arm64" => "mcp-gatekeeper-secret" }
       end
     else
-      url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.6/mcp-gatekeeper-darwin-amd64"
-      sha256 "56cb81195926e9d69550af197eb427cbc1fd7cf79486b67cc5f105f0c04564e1"
+      url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.7/mcp-gatekeeper-darwin-amd64"
+      sha256 "809375f04071244c64594a9156cd6146765be6f3190b567642115ac4ea0101f6"
 
       resource "mcp-gatekeeper-secret" do
-        url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.6/mcp-gatekeeper-secret-darwin-amd64"
-        sha256 "79c73758e91d90334e25538361ef312b25deb13b7e8600898bca1ec616a678d7"
+        url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.7/mcp-gatekeeper-secret-darwin-amd64"
+        sha256 "8baf10bf8b16b73872f006eb2c1181658ee0fac551f2325015e4e8ab8bd49f59"
       end
 
       def install
@@ -35,12 +35,12 @@ class McpGatekeeper < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.6/mcp-gatekeeper-linux-arm64"
-      sha256 "6aa12752435ef99260f4e5e79b60403292ba34c4727124ab725321d32e646388"
+      url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.7/mcp-gatekeeper-linux-arm64"
+      sha256 "36f1538178e8e9a03a20c2573a9d8b4df09df281f498532910c2b4fd88d1a2e4"
 
       resource "mcp-gatekeeper-secret" do
-        url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.6/mcp-gatekeeper-secret-linux-arm64"
-        sha256 "4f563f508112e2e74a760814377beb2632a4a40a81e5d810a2959b4fd17cce99"
+        url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.7/mcp-gatekeeper-secret-linux-arm64"
+        sha256 "3b7e9dcd4d6468d591250c21826d5d2a9ca9e595a04f789752587a528edf3940"
       end
 
       def install
@@ -48,12 +48,12 @@ class McpGatekeeper < Formula
         resource("mcp-gatekeeper-secret").stage { bin.install "mcp-gatekeeper-secret-linux-arm64" => "mcp-gatekeeper-secret" }
       end
     else
-      url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.6/mcp-gatekeeper-linux-amd64"
-      sha256 "d5f1c70eb1c5a2b6af53e0cc8a59929d662f2858101276dcd3d7be53e56173a1"
+      url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.7/mcp-gatekeeper-linux-amd64"
+      sha256 "ef29ac73873a2a56d0aeebea1a98446ded8a8bf87166b33074476b5ad0e03773"
 
       resource "mcp-gatekeeper-secret" do
-        url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.6/mcp-gatekeeper-secret-linux-amd64"
-        sha256 "73e38ff768f1549e9d3642b3726de7bcf001dbde1d69a81cd1d79f0bc7cb2bc0"
+        url "https://github.com/chy168/mcp-gatekeeper/releases/download/v0.0.7/mcp-gatekeeper-secret-linux-amd64"
+        sha256 "fe94c34dbdcacb43d18b4cab56af0cd0d46acc1e05ccb97c373140a0241d16ef"
       end
 
       def install
